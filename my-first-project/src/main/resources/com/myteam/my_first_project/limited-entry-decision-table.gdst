@@ -38,7 +38,18 @@
       <entryPointName></entryPointName>
     </Pattern52>
   </conditionPatterns>
-  <actionCols/>
+  <actionCols>
+    <org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryActionRetractFactCol52>
+      <hideColumn>false</hideColumn>
+      <width>100</width>
+      <header>Delete Loan</header>
+      <value>
+        <valueString>l</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </org.drools.workbench.models.guided.dtable.shared.model.LimitedEntryActionRetractFactCol52>
+  </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
       <acceptedTypes>
