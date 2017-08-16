@@ -6,12 +6,24 @@ package com.myteam.my_first_project;
 
 public class Loan implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Loan() {
-    }
+	@org.kie.api.definition.type.Label(value = "Amount")
+	private int amount;
 
+	public Loan() {
+	}
 
+	public int getAmount() {
+		return this.amount;
+	}
 
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+
+	public Loan(int amount) {
+		this.amount = amount;
+	}
 
 }
