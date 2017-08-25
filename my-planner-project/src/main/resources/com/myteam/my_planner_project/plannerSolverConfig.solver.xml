@@ -1,0 +1,5 @@
+<solver xStreamId="1">
+  <scanAnnotatedClasses xStreamId="2"/>
+  <scoreDirectorFactory xStreamId="3"/>
+  <termination xStreamId="4"/>
+</solver>
