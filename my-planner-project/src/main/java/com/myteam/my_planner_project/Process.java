@@ -11,6 +11,9 @@ public class Process implements java.io.Serializable {
 
 	private int requiredCpu;
 
+	@org.optaplanner.core.api.domain.variable.PlanningVariable(valueRangeProviderRefs = {"computers"})
+	private com.myteam.my_planner_project.Computer computer;
+
 	public Process() {
 	}
 
@@ -22,8 +25,18 @@ public class Process implements java.io.Serializable {
 		this.requiredCpu = requiredCpu;
 	}
 
-	public Process(int requiredCpu) {
+	public com.myteam.my_planner_project.Computer getComputer() {
+		return this.computer;
+	}
+
+	public void setComputer(com.myteam.my_planner_project.Computer computer) {
+		this.computer = computer;
+	}
+
+	public Process(int requiredCpu,
+			com.myteam.my_planner_project.Computer computer) {
 		this.requiredCpu = requiredCpu;
+		this.computer = computer;
 	}
 
 	@javax.annotation.Generated(value = {"org.optaplanner.workbench.screens.domaineditor.service.ComparatorDefinitionService"})
