@@ -6,12 +6,23 @@ package com.myteam.my_planner_project;
 
 public class Process implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Process() {
-    }
+	private int requiredCpu;
 
+	public Process() {
+	}
 
+	public int getRequiredCpu() {
+		return this.requiredCpu;
+	}
 
+	public void setRequiredCpu(int requiredCpu) {
+		this.requiredCpu = requiredCpu;
+	}
+
+	public Process(int requiredCpu) {
+		this.requiredCpu = requiredCpu;
+	}
 
 }
