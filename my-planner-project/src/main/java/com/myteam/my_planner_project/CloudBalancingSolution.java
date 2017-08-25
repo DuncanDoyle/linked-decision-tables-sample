@@ -20,6 +20,8 @@ public class CloudBalancingSolution implements java.io.Serializable {
 	@org.optaplanner.core.api.domain.valuerange.ValueRangeProvider(id = "computers")
 	private java.util.List<com.myteam.my_planner_project.Computer> computers;
 
+	private java.util.List<com.myteam.my_planner_project.Process> processes;
+
 	public CloudBalancingSolution() {
 	}
 
@@ -41,11 +43,22 @@ public class CloudBalancingSolution implements java.io.Serializable {
 		this.computers = computers;
 	}
 
+	public java.util.List<com.myteam.my_planner_project.Process> getProcesses() {
+		return this.processes;
+	}
+
+	public void setProcesses(
+			java.util.List<com.myteam.my_planner_project.Process> processes) {
+		this.processes = processes;
+	}
+
 	public CloudBalancingSolution(
 			org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore score,
-			java.util.List<com.myteam.my_planner_project.Computer> computers) {
+			java.util.List<com.myteam.my_planner_project.Computer> computers,
+			java.util.List<com.myteam.my_planner_project.Process> processes) {
 		this.score = score;
 		this.computers = computers;
+		this.processes = processes;
 	}
 
 }
