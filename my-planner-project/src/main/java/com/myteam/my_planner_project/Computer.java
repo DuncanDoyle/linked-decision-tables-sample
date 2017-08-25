@@ -6,12 +6,23 @@ package com.myteam.my_planner_project;
 
 public class Computer implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Computer() {
-    }
+	private int cpu;
 
+	public Computer() {
+	}
 
+	public int getCpu() {
+		return this.cpu;
+	}
 
+	public void setCpu(int cpu) {
+		this.cpu = cpu;
+	}
+
+	public Computer(int cpu) {
+		this.cpu = cpu;
+	}
 
 }
