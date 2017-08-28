@@ -5,5 +5,10 @@ import java.lang.Number;
 rule "computeCreditRatio"
 	dialect "mvel"
 	when
+		$a : Applicant( )
 	then
+		CreditRatio fact0 = new CreditRatio();
+		fact0.setApplicant( $a );
+		fact0.setCreditRatio( (($a.getConsumerDebt() + $a.getMedical()+ $a.getRentOrMortgage) / $a.getIncome()) );
+		insert( fact0 );
 end
