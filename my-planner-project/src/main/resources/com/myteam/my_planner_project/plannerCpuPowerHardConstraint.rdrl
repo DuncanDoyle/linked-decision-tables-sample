@@ -5,5 +5,6 @@ import java.lang.Number;
 rule "plannerCpuPowerHardConstraint"
 	dialect "mvel"
 	when
-	then
+		$c : Computer( $cpu : cpu)
+			then
 end
