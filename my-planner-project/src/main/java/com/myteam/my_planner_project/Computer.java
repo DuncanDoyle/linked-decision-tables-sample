@@ -12,6 +12,8 @@ public class Computer implements java.io.Serializable {
 
 	private int cost;
 
+	private long id;
+
 	public Computer() {
 	}
 
@@ -31,9 +33,18 @@ public class Computer implements java.io.Serializable {
 		this.cost = cost;
 	}
 
-	public Computer(int cpu, int cost) {
+	public long getId() {
+		return this.id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public Computer(int cpu, int cost, long id) {
 		this.cpu = cpu;
 		this.cost = cost;
+		this.id = id;
 	}
 
 }
