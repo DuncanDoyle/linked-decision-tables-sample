@@ -1,0 +1,9 @@
+package com.myteam.my_planner_project;
+
+import java.lang.Number;
+
+rule "plannerCpuPowerHardConstraint"
+	dialect "mvel"
+	when
+	then
+end
