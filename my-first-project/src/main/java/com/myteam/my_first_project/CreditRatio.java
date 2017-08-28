@@ -6,12 +6,34 @@ package com.myteam.my_first_project;
 
 public class CreditRatio implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CreditRatio() {
-    }
+	private double creditRatio;
+	private com.myteam.my_first_project.Applicant applicant;
 
+	public CreditRatio() {
+	}
 
+	public double getCreditRatio() {
+		return this.creditRatio;
+	}
 
+	public void setCreditRatio(double creditRatio) {
+		this.creditRatio = creditRatio;
+	}
+
+	public com.myteam.my_first_project.Applicant getApplicant() {
+		return this.applicant;
+	}
+
+	public void setApplicant(com.myteam.my_first_project.Applicant applicant) {
+		this.applicant = applicant;
+	}
+
+	public CreditRatio(double creditRatio,
+			com.myteam.my_first_project.Applicant applicant) {
+		this.creditRatio = creditRatio;
+		this.applicant = applicant;
+	}
 
 }
