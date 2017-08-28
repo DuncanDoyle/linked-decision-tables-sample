@@ -5,5 +5,8 @@ import java.lang.Number;
 rule "plannerComputerCostSoftConstraint"
 	dialect "mvel"
 	when
+		$c : Computer( $cost : cost)
+		exists (Process( computer == $c )) 
 	then
+		scoreHolder.addSoftConstraintMatch(kcontext, -$cost);
 end
