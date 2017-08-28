@@ -6,12 +6,43 @@ package com.myteam.my_first_project;
 
 public class Applicant implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Applicant() {
-    }
+	private long id;
+	private java.lang.String name;
+	private java.lang.String surname;
 
+	public Applicant() {
+	}
 
+	public long getId() {
+		return this.id;
+	}
 
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getSurname() {
+		return this.surname;
+	}
+
+	public void setSurname(java.lang.String surname) {
+		this.surname = surname;
+	}
+
+	public Applicant(long id, java.lang.String name, java.lang.String surname) {
+		this.id = id;
+		this.name = name;
+		this.surname = surname;
+	}
 
 }
