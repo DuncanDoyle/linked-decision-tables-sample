@@ -10,6 +10,8 @@ public class Computer implements java.io.Serializable {
 
 	private int cpu;
 
+	private int cost;
+
 	public Computer() {
 	}
 
@@ -21,8 +23,17 @@ public class Computer implements java.io.Serializable {
 		this.cpu = cpu;
 	}
 
-	public Computer(int cpu) {
+	public int getCost() {
+		return this.cost;
+	}
+
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+
+	public Computer(int cpu, int cost) {
 		this.cpu = cpu;
+		this.cost = cost;
 	}
 
 }
