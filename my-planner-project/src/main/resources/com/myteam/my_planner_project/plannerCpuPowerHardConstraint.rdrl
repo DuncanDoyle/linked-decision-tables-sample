@@ -6,8 +6,8 @@ rule "plannerCpuPowerHardConstraint"
 	dialect "mvel"
 	when
 		$c : Computer( $cpu : cpu)
-		Number( intValue() > $cpu ) from accumulate ( Process( computer == $c , $reqCpu : requiredCpu),
+		Number( $totalReqCpu : intValue() > $cpu ) from accumulate ( Process( computer == $c , $reqCpu : requiredCpu),
 			sum($reqCpu)) 
 	then
-		scoreHolder.addHardConstraintMatch(kcontext, $reqCpu - $cpu);
+		scoreHolder.addHardConstraintMatch(kcontext, ($cpu - $totalReqCpu));
 end
