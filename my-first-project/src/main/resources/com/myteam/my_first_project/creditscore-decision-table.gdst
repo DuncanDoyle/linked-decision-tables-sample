@@ -1,5 +1,5 @@
 <decision-table52>
-  <tableName>creditscore-two-decision-table</tableName>
+  <tableName>creditscore-decision-table</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
     <width>50</width>
@@ -73,7 +73,6 @@
     <list>
       <value>
         <valueNumeric class="int">1</valueNumeric>
-        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
