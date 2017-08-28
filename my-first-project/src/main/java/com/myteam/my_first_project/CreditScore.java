@@ -6,12 +6,23 @@ package com.myteam.my_first_project;
 
 public class CreditScore implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CreditScore() {
-    }
+	private int score;
 
+	public CreditScore() {
+	}
 
+	public int getScore() {
+		return this.score;
+	}
 
+	public void setScore(int score) {
+		this.score = score;
+	}
+
+	public CreditScore(int score) {
+		this.score = score;
+	}
 
 }
