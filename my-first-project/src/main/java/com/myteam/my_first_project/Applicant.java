@@ -12,6 +12,8 @@ public class Applicant implements java.io.Serializable {
 	private java.lang.String name;
 	private java.lang.String surname;
 
+	private com.myteam.my_first_project.CreditScore creditScore;
+
 	public Applicant() {
 	}
 
@@ -39,10 +41,21 @@ public class Applicant implements java.io.Serializable {
 		this.surname = surname;
 	}
 
-	public Applicant(long id, java.lang.String name, java.lang.String surname) {
+	public com.myteam.my_first_project.CreditScore getCreditScore() {
+		return this.creditScore;
+	}
+
+	public void setCreditScore(
+			com.myteam.my_first_project.CreditScore creditScore) {
+		this.creditScore = creditScore;
+	}
+
+	public Applicant(long id, java.lang.String name, java.lang.String surname,
+			com.myteam.my_first_project.CreditScore creditScore) {
 		this.id = id;
 		this.name = name;
 		this.surname = surname;
+		this.creditScore = creditScore;
 	}
 
 }
