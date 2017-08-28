@@ -107,21 +107,30 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>CreditScore</header>
+      <header>Credit Score</header>
       <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>CreditScore score = new CreditScore();
-score.setScore(@{score});
-insert(score);</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
+        <org.drools.workbench.models.datamodel.rule.ActionInsertFact>
+          <fieldValues>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>score</field>
+              <value>$score</value>
+              <nature>7</nature>
+              <type>Integer</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+          </fieldValues>
+          <factType>CreditScore</factType>
+          <isBound>false</isBound>
+        </org.drools.workbench.models.datamodel.rule.ActionInsertFact>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>CreditScore</header>
-          <varName>score</varName>
-          <fieldType>Object</fieldType>
+          <header>Credit Score</header>
+          <varName>$score</varName>
+          <fieldType>Integer</fieldType>
+          <factType>CreditScore</factType>
+          <factField>score</factField>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
@@ -185,8 +194,9 @@ insert(score);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="int">3</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -215,8 +225,9 @@ insert(score);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -245,8 +256,9 @@ insert(score);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
