@@ -3,7 +3,7 @@ package com.myteam.my_first_project;
 import java.lang.Number;
 
 rule "computeCreditRatio"
-	dialect "mvel"
+	dialect "java"
 	when
 		$a : Applicant( )
 	then
