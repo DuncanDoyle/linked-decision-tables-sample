@@ -8,8 +8,10 @@ public class Loan implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Amount")
+	@org.kie.api.definition.type.Label("Amount")
 	private int amount;
+
+	private boolean approved;
 
 	public Loan() {
 	}
@@ -22,8 +24,17 @@ public class Loan implements java.io.Serializable {
 		this.amount = amount;
 	}
 
-	public Loan(int amount) {
+	public boolean isApproved() {
+		return this.approved;
+	}
+
+	public void setApproved(boolean approved) {
+		this.approved = approved;
+	}
+
+	public Loan(int amount, boolean approved) {
 		this.amount = amount;
+		this.approved = approved;
 	}
 
 }
