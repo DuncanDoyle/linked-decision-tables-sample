@@ -1,0 +1,9 @@
+package com.myteam.my_first_project;
+
+import java.lang.Number;
+
+rule "computeCreditRatio"
+	dialect "mvel"
+	when
+	then
+end
