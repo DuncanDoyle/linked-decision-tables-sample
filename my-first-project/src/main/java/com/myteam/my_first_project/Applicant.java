@@ -14,6 +14,14 @@ public class Applicant implements java.io.Serializable {
 
 	private com.myteam.my_first_project.CreditScore creditScore;
 
+	private int income;
+
+	private int consumerDebt;
+
+	private int medical;
+
+	private int rentOrMortgage;
+
 	public Applicant() {
 	}
 
@@ -50,12 +58,49 @@ public class Applicant implements java.io.Serializable {
 		this.creditScore = creditScore;
 	}
 
+	public int getIncome() {
+		return this.income;
+	}
+
+	public void setIncome(int income) {
+		this.income = income;
+	}
+
+	public int getConsumerDebt() {
+		return this.consumerDebt;
+	}
+
+	public void setConsumerDebt(int consumerDebt) {
+		this.consumerDebt = consumerDebt;
+	}
+
+	public int getMedical() {
+		return this.medical;
+	}
+
+	public void setMedical(int medical) {
+		this.medical = medical;
+	}
+
+	public int getRentOrMortgage() {
+		return this.rentOrMortgage;
+	}
+
+	public void setRentOrMortgage(int rentOrMortgage) {
+		this.rentOrMortgage = rentOrMortgage;
+	}
+
 	public Applicant(long id, java.lang.String name, java.lang.String surname,
-			com.myteam.my_first_project.CreditScore creditScore) {
+			com.myteam.my_first_project.CreditScore creditScore, int income,
+			int consumerDebt, int medical, int rentOrMortgage) {
 		this.id = id;
 		this.name = name;
 		this.surname = surname;
 		this.creditScore = creditScore;
+		this.income = income;
+		this.consumerDebt = consumerDebt;
+		this.medical = medical;
+		this.rentOrMortgage = rentOrMortgage;
 	}
 
 }
