@@ -14,6 +14,8 @@ public class Process implements java.io.Serializable {
 	@org.optaplanner.core.api.domain.variable.PlanningVariable(valueRangeProviderRefs = {"computers"})
 	private com.myteam.my_planner_project.Computer computer;
 
+	private long id;
+
 	public Process() {
 	}
 
@@ -33,18 +35,27 @@ public class Process implements java.io.Serializable {
 		this.computer = computer;
 	}
 
+	public long getId() {
+		return this.id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
 	public Process(int requiredCpu,
-			com.myteam.my_planner_project.Computer computer) {
+			com.myteam.my_planner_project.Computer computer, long id) {
 		this.requiredCpu = requiredCpu;
 		this.computer = computer;
+		this.id = id;
 	}
 
 	@javax.annotation.Generated(value = {"org.optaplanner.workbench.screens.domaineditor.service.ComparatorDefinitionService"})
-	@org.optaplanner.workbench.screens.domaineditor.model.ComparatorDefinition(objectPropertyPaths = {@org.optaplanner.workbench.screens.domaineditor.model.ComparatorObjectPropertyPath(ascending = true, objectProperties = {@org.optaplanner.workbench.screens.domaineditor.model.ComparatorObjectProperty(name = "requiredCpu", type = int.class)})})
+	@org.optaplanner.workbench.screens.domaineditor.model.ComparatorDefinition(objectPropertyPaths = {@org.optaplanner.workbench.screens.domaineditor.model.ComparatorObjectPropertyPath(objectProperties = {@org.optaplanner.workbench.screens.domaineditor.model.ComparatorObjectProperty(name = "requiredCpu", type = int.class)}, ascending = true)})
 	public static class DifficultyComparator
 			implements
 				java.io.Serializable,
-				java.util.Comparator<com.myteam.my_planner_project.Process> {
+				java.util.Comparator {
 		static final long serialVersionUID = 1L;
 
 		@javax.annotation.Generated(value = {"org.optaplanner.workbench.screens.domaineditor.service.ComparatorDefinitionService"})
