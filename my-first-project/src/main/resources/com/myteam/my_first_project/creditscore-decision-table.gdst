@@ -113,7 +113,7 @@
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
               <field>score</field>
-              <value>Score</value>
+              <value>$score</value>
               <nature>7</nature>
               <type>Integer</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
@@ -127,7 +127,7 @@
           <hideColumn>false</hideColumn>
           <width>100</width>
           <header>Credit Score</header>
-          <varName>Score</varName>
+          <varName>$score</varName>
           <fieldType>Integer</fieldType>
           <factType>CreditScore</factType>
           <factField>score</factField>
@@ -194,7 +194,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">400</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
@@ -225,7 +224,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">250</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
@@ -256,7 +254,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">50</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
