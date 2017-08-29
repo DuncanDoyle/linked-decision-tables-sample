@@ -1,3 +1,0 @@
-package com.myteam.my_planner_project;
-
-global org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScoreHolder scoreHolder;
